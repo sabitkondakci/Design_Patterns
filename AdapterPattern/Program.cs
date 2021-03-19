@@ -9,7 +9,7 @@ namespace AdapterPattern
     {
         static void Main(string[] args)
         {
-            ICustomer customerJson = new CustomerAdapter();
+            ICustomer customerJson = new CustomerAdapter(); //CustomerManager implements ICustomer , polymorphism!
             string result = customerJson.GetCustomerList();
             Console.WriteLine(result);
             Console.Read();
