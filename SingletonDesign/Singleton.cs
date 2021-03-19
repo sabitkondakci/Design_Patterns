@@ -1,8 +1,9 @@
  //sealed , to prevent a nested class inheriting this class
     sealed class SingletonDesign
     {
-        private static SingletonDesign _singleton;
+        private static SingletonDesign _singleton = null;
 
+        private static readonly object ThreadSafe = new object();
         //private constructor to prevent other classes creating an instance from this class
         private SingletonDesign() { }
 
@@ -10,9 +11,19 @@
         {
             get
             {
-                //if(_singleton == null){ _singleton = new SingletonDesign();}
-                _singleton ??= new SingletonDesign(); 
+             // this part ensures thread safety
+                if (_singleton == null)
+                {
+                    lock (ThreadSafe)
+                    {
+                        //if(_singleton == null){ _singleton = new SingletonDesign();}
+                        _singleton ??= new SingletonDesign();
+                      
+                    }
+                }
+
                 return _singleton;
+
             }
 
         }
