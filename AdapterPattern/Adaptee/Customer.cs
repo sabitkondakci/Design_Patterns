@@ -28,7 +28,7 @@ namespace AdapterPattern.Adaptee
         }
     }
 
-    public class CustomerManager
+    public class CustomerManager:ICustomer
     {
         public List<Customer> customers;
 
