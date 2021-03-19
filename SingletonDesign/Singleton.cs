@@ -11,7 +11,7 @@
         {
             get
             {
-             // this part ensures thread safety
+             // this part ensures thread safety , only works if _singleton == null at first try
                 if (_singleton == null)
                 {
                     lock (ThreadSafe)
