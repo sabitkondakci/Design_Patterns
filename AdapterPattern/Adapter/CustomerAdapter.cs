@@ -10,7 +10,7 @@ using Formatting = Newtonsoft.Json.Formatting;
 
 namespace AdapterPattern.Adapter
 {
-    class CustomerAdapter :CustomerManager,ICustomer
+    class CustomerAdapter :CustomerManager
     {
         // adapting xml to json , format transition with no interruption on former code blocks via Adapter Design Pattern
         public override string GetCustomerList()
