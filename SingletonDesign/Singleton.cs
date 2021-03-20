@@ -2,8 +2,9 @@
     sealed class SingletonDesign
     {
         private static SingletonDesign _singleton = null;
-
-        private static readonly object ThreadSafe = new object();
+        
+        // volatile keyword guarantees that your temp reference will be stored on main memory but cache on CPU;
+        private static volatile object ThreadSafe = new object();
         //private constructor to prevent other classes creating an instance from this class
         private SingletonDesign() { }
 
