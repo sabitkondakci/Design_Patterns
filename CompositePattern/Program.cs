@@ -16,7 +16,7 @@ namespace CompositePattern
             IStaff Gamze = new Manager("Gamze", "IT"){subOrdinates = {Canan,Kadir}};
             IStaff Julia = new Manager("Julia", "HR"){subOrdinates = {Elif,Emin}};
 
-            Elif.Details();
+            Gamze.Details();
 
             Console.WriteLine();
         }
