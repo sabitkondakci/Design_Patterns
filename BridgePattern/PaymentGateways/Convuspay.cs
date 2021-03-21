@@ -8,7 +8,7 @@ namespace BridgePatternV2.PaymentGateways
     {
         public void StartTransaction(string paymentMethod)
         {
-            Console.WriteLine($"Payment Medium: {paymentMethod}");
+            Console.WriteLine($"Payment Method: {paymentMethod}");
             Console.WriteLine($"Gateway : {PaymentGateway.CorvusPay}");
         }
     }
