@@ -9,7 +9,7 @@ namespace BridgePatternV2.PaymentMethods
         public override void Pay()
         { 
             PaymentMedium.StartTransaction("Master");
-            Console.WriteLine("Master Payment Method via {PaymentMedium.GetType().Name}");
+            Console.WriteLine($"Master Payment Method via {PaymentMedium.GetType().Name}");
         }
     }
 }
