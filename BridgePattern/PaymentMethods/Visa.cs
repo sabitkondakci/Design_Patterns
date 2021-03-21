@@ -9,7 +9,7 @@ namespace BridgePatternV2.PaymentMethods
         public override void Pay()
         {
             PaymentMedium.StartTransaction("Visa");
-            Console.WriteLine("Visa Payment Method");
+            Console.WriteLine("Visa Payment Method via {PaymentMedium.GetType().Name}");
         }
     }
 }
