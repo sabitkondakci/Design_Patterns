@@ -9,7 +9,7 @@ namespace BridgePatternV2.PaymentMethods
         public override void Pay()
         {
             PaymentMedium.StartTransaction("American Express");
-            Console.WriteLine("AmericanExpress Payment Method Invoked via {PaymentMedium.GetType().Name}");
+            Console.WriteLine($"AmericanExpress Payment Method Invoked via {PaymentMedium.GetType().Name}");
         }
     }
 }
