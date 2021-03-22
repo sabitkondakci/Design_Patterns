@@ -4,7 +4,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using ObserverPattern.Interfaces;
+using ObserverPattern.Abstracts;
 
 namespace ObserverPattern.Observers
 {
