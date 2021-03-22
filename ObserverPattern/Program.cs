@@ -1,5 +1,5 @@
 ﻿using System;
-using ObserverPattern.Interfaces;
+using ObserverPattern.Abstracts;
 using ObserverPattern.Observables;
 using ObserverPattern.Observers;
 
