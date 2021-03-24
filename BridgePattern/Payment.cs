@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BridgePatternV2
 {
+    //composite abstract class
     public abstract class Payment
     {
         // the bridge which connects Payment ----> IPaymentMedium
